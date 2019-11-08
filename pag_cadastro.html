@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Divulgação de produtos artesanais do Brasil.">
+    <meta name="keywords" content="Artesanato, Arte, Cultura, Divulgação, Venda">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Maxwell James, Edvaldo Cavalcanti, Israel Jeronimo">
+    <title> Artesanato Space - Valorizando a arte feito à mão do Brasil </title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="navbar">
+            <nav>
+                <div class="nav-wrapper light brown">
+                        
+                    <!-- Ícone para abrir no Mobile -->
+                    <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+<!--------------------------------- MENU SUPERIOR --------------------------------->
+    
+                    <ul id="navbar-items" class="hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pag_sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="#!">Artesãos</a></li>
+                        <li><a class="dropdown-trigger" data-target="dropdown-m">Categorias</a></li>
+                        <li><a class="dropdown-trigger" data-target="dropdown-entre">Entrar</a></li>
+                    </ul>
+
+                    <!-- Dropdown categorias-->
+                    <ul id="dropdown-m" class="dropdown-content">
+                      <li><a id="corLink" href="cat_casa.html">Casa</a></li>
+                      <li><a href="cat_decoracao.html">Decoração</a></li>
+                      <li><a href="cat_bijouteria.html">Bijouteria</a></li>
+                      <li><a href="cat_bolsas.html">Bolsas</a></li>
+                    </ul>
+
+                    <!-- dropdown login/cadastro -->
+                    <ul id="dropdown-entre" class="dropdown-content">
+                       <li><a href="pag_entrar.html">Entrar 🔑</a></li>
+                       <li class="divider"></li>
+                       <li><a href="pag_cadastro.html">Cadastrar 📝</a></li>
+                    </ul>
+
+<!--------------------------------- MENU MOBILE --------------------------------->
+        <ul id="mobile-navbar" class="sidenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pag_sobrenos.html">Sobre Nós</a></li>
+            <li><a href="#!">Artesãos</a></li>
+            <li><a href="pag_entrar.html">Entrar 🔑</a></li>
+            <li><a href="pag_cadastro.html">Cadastrar 📝</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a class="dropdown-trigger" data-target="dropdown-nav" href="#">
+                Categorias <i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+        </ul>
+
+        <!-- Dropdown mobile -->
+  <ul id='dropdown-nav' class='dropdown-content'>
+    <li><a href="cat_casa.html">Casa</a></li>
+    <li><a href="cat_decoracao.html">Decoração</a></li>
+    <li><a href="cat_bijouteria.html">Bijouteria</a></li>
+    <li><a href="cat_bolsas.html">Bolsas</a></li>
+  </ul>
+
+<!--------------------------------- CAMPO PESQUISA --------------------------------->
+                    <ul id="navbar-wrapper" style="float: right; padding-right: 3%;">
+                    <input type="icon text" placeholder="O que você procura?" name="search" style="background-color: white">
+                    <li><a href=""><i class="large material-icons">search</i>
+                    </ul>
+                 
+                </div>
+            </nav>
+        </div>
+
+  <!-------------- CAPA ARTESANATO SPACE ------------------------------------------------>
+
+  <section class="nome-capa-menor">
+        <div class="row">
+           <div class="col s12 l12 l12">
+              <a href="index.html"><img src="img/nome.png" class="responsive-img-center-align" width="40%"></a>
+           </div>
+         </div>
+     </div> 
+
+    </header>
+
+<!----------------------- CADASTRO ------------------------------>
+
+   <body>
+
+    <form action="" id="form" method="post" class="input-field " display="block">
+
+    <div class="row" id="bg-cadastro">
+    <div class="col s10 offset-s1">
+      
+      <h5 class="nome-titulo">CADASTRO</h5>
+
+        <div class="card-content light brown-text">
+
+            <div class="input-field col s12 l12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="nome" type="text" maxlength="80" class="validate" required>
+              <label for="nome">Seu Nome</label>
+            </div>
+
+            <div class="input-field col s12 l12">
+              <i class="material-icons prefix">keyboard_circle</i>
+              <input id="senha" type="password" maxlength="30" class="validate" required>
+              <label for="senha">Senha</label>
+            </div>
+
+            <div class="input-field col s12 l12">
+              <i class="material-icons prefix">perm_contact_calendar</i>
+              <input id="data" type="date" class="validate" required>
+              <label for="data">Data de Nascimento</label>
+            </div>
+
+            <div class="input-field col s12 l12">
+              <i class="material-icons prefix">credit_card</i>
+              <input id="cpf" type="text" maxlength="14" class="validate" OnKeyPress="formatar('###.###.###-##', this)" required>
+              <label for="cpf">CPF</label>
+            </div>
+
+            <div class="input-field col s12 l12">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" maxlength="80" class="validate" required>
+              <label for="email">E-mail</label>
+              <span class="helper-text" data-error="Inválido"></span>
+            </div>
+
+            <div class="input-field col s12 l12">
+              <i class="material-icons prefix">phone</i>
+              <input id="telefone" type="text" maxlength="13" class="validate" OnKeyPress="formatar('##-#####-####', this)">
+              <label for="telefone">Telefone</label>
+            </div>
+
+            <div class="input-field col s12 l12">
+              <i class="material-icons prefix">book</i>
+              <textarea  id="bio" class="materialize-textarea" maxlength="1000"></textarea>
+              <label for="bio">Bio</label>
+            </div>
+            
+            <div class="input-field col s12 l12" style="text-align:center;">
+            <a href="index.html" class="waves-effect waves-light btn brown">voltar</a> &nbsp;
+            <button class="btn waves-effect waves-light light-blue" type="submit" name="action">cadastrar<i class="material-icons right">send</i>
+            </button>
+            </div>
+       
+        </div>
+      
+    </div>
+    </div>
+
+    </form>
+
+   </body>
+   
+<!----------------------- RODAPÉ FINAL ------------------------------>
+
+    <footer class="page-footer brown">
+
+            <div class="footer-copyright white">
+              <div class="rodape">
+              <img src="img/logo.png" align="center">
+              <a class="lblueColor"><b>Polo Norte 2019 © Copyright todos os direitos</b> <a href="pag_termosdeuso.html" target="_blank"><u>Termos de uso</u> <a href="pag_politica.html" target="_blank"><u>Política</u></a>
+              </div>
+            </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

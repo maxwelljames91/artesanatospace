@@ -1,0 +1,132 @@
+html {
+    background-image: url(../img/bg.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.container {
+    padding-top: 3%;
+}
+
+/*------ LOGO DO ARTESANATO SPACE ---------*/
+
+.nome-capa {
+    text-align: center;
+    padding-top: 8%;
+}
+
+/*------ LOGO DO ARTESANATO SPACE MENOR ---------*/
+
+.nome-capa-menor {
+    text-align: center;
+    padding-top: 4%;
+}
+
+/*------ CLASSE LIGHT BLUE (#29abe2) PARA ALTERAR COR ---------*/
+.lblueColor {
+    color: #29abe2;
+}
+
+/*------ BG DE FUNDO QUASE TRANSPARENTE BRANCO ---------*/
+
+#bg {
+    width: 80%;
+    background: rgb(255, 255, 255) transparent;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#bg-cadastro {
+    width: 80%;
+    height: 760px;
+    background: rgb(255, 255, 255) transparent;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#bg-perfil {
+    width: 80%;
+    height: 600px;
+    background: rgb(255, 255, 255) transparent;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/*------ CONFIG NOME CADASTRO E LOGIN ---------*/
+
+.nome-titulo {
+
+    padding-top: 30px;
+    font-family: impact;
+    text-align: center;
+    font-size: 40px;
+    color: #795548;
+
+}
+
+/*------ CONFIG DADOS PERFIL e AVATAR ---------*/
+
+.nome-perfil {
+
+   color: #795548;
+}
+
+/*------ CORES DE INPUT ---------*/
+
+.input-field .prefix.active {
+    color: #29abe2;
+}
+
+/*------ RODAPÉ POLO NORTE ---------*/
+
+.rodape {
+    padding-left: 5%;
+}
+
+/*----------------------------------- R E S P O N S I V E ------------------------------------*/
+
+@media only screen and (min-width: 992px) {
+  .container {
+    padding-top: 4%;
+    width: 90%;
+}
+
+/*------ LOGO DO ARTESANATO SPACE ---------*/
+
+.nome-capa {
+   padding-left: 4%;
+   padding-top: 5%;
+   width: 95%;
+}
+
+.nome-capa-menor {
+   padding-left: 4%;
+   padding-top: 3%;
+   width: 95%;
+}
+
+/*------ BG DE FUNDO QUASE TRANSPARENTE BRANCO ---------*/
+
+#bg-cadastro {
+    width: 60%;
+    height: 820px;
+    background: rgb(255, 255, 255) transparent;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#bg-login {
+    width: 60%;
+    height: 400px;
+    background: rgb(255, 255, 255) transparent;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#bg-perfil {
+    width: 70%;
+    height: 820px;
+    background: rgb(255, 255, 255) transparent;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/*------ LOGO DO ARTESANATO SPACE ---------*/
+
+.corLink {
+    color: black !important;
+ }
